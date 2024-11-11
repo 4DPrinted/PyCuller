@@ -13,7 +13,7 @@ PyCuller is relatively simple and easy to run, provided you have some preliminar
 > pip install rawpy
 
 # How to use PyCuller
-*DISCLAIMER: I have only tested this on Sony camera's proprietary .ARW file format. If you are using another system, I assume it should work but would not be surprised if thumbnail decoding breaks.*
+*DISCLAIMER: I have tested these with the 3 major brands: Sony [.ARW], Nikon [.nef], and Canon [.CR3] and it works properly.*
 
 ## General Use
 1. Begin by getting the pathname to your raw folder (this works with external drives or direct read on cards)
