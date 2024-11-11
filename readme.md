@@ -5,8 +5,11 @@ PyCuller is relatively simple and easy to run, provided you have some preliminar
 
 # Packages to Install
 > pip install opencv-python
+> 
 > pip install PyQt6
+> 
 > pip install pillow
+> 
 > pip install rawpy
 
 # How to use PyCuller
