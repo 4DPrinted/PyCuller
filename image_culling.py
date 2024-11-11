@@ -352,7 +352,12 @@ class ImageCullingApp(QWidget):
 		# Retrieve text from input field and display it
 		raw_directory = self.PathInput.text()
 		try:
-			raw_paths = getRaws(raw_directory)
+			self.raw_extension = self.RawExtensionInput.text()
+			if self.raw_extension == None:
+				self.OutputLabel.setText("Did not designate raw extension!")
+				return None
+
+			raw_paths = getRaws(raw_directory,raw_extension = self.raw_extension)
 		except FileNotFoundError:
 			self.OutputLabel.setText("Path to Raws not found!")
 			return None
@@ -413,10 +418,3 @@ app = QApplication(sys.argv)
 window = ImageCullingApp()
 window.show()
 app.exec()
-
-	
-
-
-
-
-
